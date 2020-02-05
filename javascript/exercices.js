@@ -1,15 +1,34 @@
 const anagrammes = (stringA, stringB) => {
-  /**
-   * stringA est égale à stringB si et seulement s'ils partagent les mêmes
-   * caractères alphabétiques dans la même quantité.
-   * La case n'est pas pris en compte
-   *
-   * Exemples :
-   *
-   * anagrams('rail safety', 'fairy tales') === true
-   * anagrams('RAIL! SAFETY!', 'fairy tales') === true
-   * anagrams('Hi there', 'Bye there') === false
-   */
+  
+  //  * stringA est égale à stringB si et seulement s'ils partagent les mêmes
+  //  * caractères alphabétiques dans la même quantité.
+  //  * La case n'est pas pris en compte
+  //  *
+  //  * Exemples :
+
+  const regex = /[^a-z]+/g; 
+  console.log(stringA);
+  const mot1 = stringA.split("").sort().join("").toLowerCase().replace(regex, "")
+  console.log(mot1);
+  // console.log(mot1.sort().join("").toLowerCase().replace(regex, ""))
+
+  // const mot1 = stringA.split("").sort().join("").toLowerCase().replace(regex, "")
+  //.sort().join("").toLowerCase().match((regex) || []).join(""); 
+  const mot2 = stringB.split("").sort().join("").toLowerCase().replace(regex, "")
+  console.log(mot2); 
+  // console.log(mot2.sort().join("").toLowerCase().replace(regex, ""))
+  //.sort().join("").toLowerCase().match((regex) || []).join("");
+
+  
+  return mot1 === mot2; 
+  
+  
+  //  anagrammes('rail safety', 'fairy tales') === true
+  //  anagrammes('RAIL! SAFETY!', 'fairy tales') === true
+  //  anagrammes('Hi there', 'Bye there') === false
+   
+
+
 
 };
 
@@ -30,9 +49,45 @@ class Stack {
  * s.push(3);
  * s.pop(); // returns 3
  * s.pop(); // returns 2
- * s.peek(); // returns 1
- */
+ *s.peek(); // returns 1
+ 
 };
+
+
+*/
+
+constructor(){
+
+  this.tab = [];
+}
+
+push(newNumb){
+
+  var i = this.tab.length; 
+  this.tab[i] = newNumb; 
+  
+
+}
+
+pop(){
+
+  var i = this.tab.length;
+  var temp = this.tab[i-1]; 
+  this.tab.length -= 1; 
+  return temp; 
+
+
+
+
+}
+
+peek(){
+ 
+return this.tab[0]; 
+
+}; 
+
+}
 
 
 const fizzBuzz = (n) => {
@@ -49,6 +104,18 @@ const fizzBuzz = (n) => {
  * console.log(4)
  * console.log('buzz')
  */
+
+const x = [];
+x.length = n;
+
+var y = 0; 
+
+for 
+
+
+
+
+
 
 };
 
